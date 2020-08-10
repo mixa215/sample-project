@@ -14,13 +14,13 @@
 
                         <div class="form-group">
                             <label for="question">Question</label>
-                            <input name="quwstion[question]" type="text" class="form-control"
+                            <input name="question[question]" type="text" class="form-control"
                                    value="{{ old('question.question') }}"
                                    id="question" aria-describedby="questionHelp" placeholder="Enter Question">
                             <small id="questionHelp" class="form-text text-muted">Ask simple and to-the-point question for best results.</small>
 
                             @error('question.question')
-                            <small class="test-danger">{{ $message }}</small>
+                            <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
 
@@ -36,7 +36,7 @@
                                            id="answer1" aria-describedby="сhoiceHelp" placeholder="Enter Choice 1">
 
                                     @error('answers.0.answer')
-                                    <small class="test-danger">{{ $message }}</small>
+                                    <small class="text-danger">{{ $message }}</small>
                                     @enderror
                                 </div>
 
@@ -47,7 +47,7 @@
                                            id="answer2" aria-describedby="сhoiceHelp" placeholder="Enter Choice 2">
 
                                     @error('answers.1.answer')
-                                    <small class="test-danger">{{ $message }}</small>
+                                    <small class="text-danger">{{ $message }}</small>
                                     @enderror
                                 </div>
 
@@ -58,7 +58,7 @@
                                            id="answer3" aria-describedby="сhoiceHelp" placeholder="Enter Choice 3">
 
                                     @error('answers.2.answer')
-                                    <small class="test-danger">{{ $message }}</small>
+                                    <small class="text-danger">{{ $message }}</small>
                                     @enderror
                                 </div>
 
@@ -69,7 +69,7 @@
                                            id="answer4" aria-describedby="сhoiceHelp" placeholder="Enter Choice 4">
 
                                     @error('answers.3.answer')
-                                    <small class="test-danger">{{ $message }}</small>
+                                    <small class="text-danger">{{ $message }}</small>
                                     @enderror
                                 </div>
 

@@ -18,7 +18,7 @@
                             <small id="emailHelp" class="form-text text-muted">Give your questionnaire a title that attracts attention.</small>
 
                             @error('title')
-                            <small class="test-danger">{{ $message }}</small>
+                            <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
                         <div class="form-group">
@@ -27,7 +27,7 @@
                             <small id="purposeHelp" class="form-text text-muted">Give a purpose will increase responses.</small>
 
                             @error('purpose')
-                                <small class="test-danger">{{ $message }}</small>
+                                <small class="text-danger">{{ $message }}</small>
                             @enderror
                         </div>
 

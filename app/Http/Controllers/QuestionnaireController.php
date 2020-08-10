@@ -20,7 +20,7 @@ class QuestionnaireController extends Controller
     {
         $data = request()->validate([
             'title' => 'required',
-            'purpose' => 'required'
+            'purpose' => 'required',
         ]);
 
 
@@ -31,6 +31,8 @@ class QuestionnaireController extends Controller
 
     public function show(\App\Questionnaire $questionnaire)
     {
+        $questionnaire->load('questions.answers');
+
         return view('questionnaire.show', compact('questionnaire'));
     }
 }
