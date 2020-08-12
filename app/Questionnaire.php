@@ -17,6 +17,11 @@ class Questionnaire extends Model
     {
         return $this->hasMany(Question::class);
     }
+
+    public function survey()
+    {
+        return $this->hasMany(Survey::class);
+    }
 }
 
 
