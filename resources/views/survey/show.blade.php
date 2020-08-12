@@ -47,33 +47,33 @@
                             </div>
                         @endforeach
 
-                       {{-- <div class="form-group">
-                            <label for="title">Title</label>
-                            <input name="title" type="text" class="form-control" id="title" aria-describedby="titleHelp" placeholder="Enter title">
-                            <small id="emailHelp" class="form-text text-muted">Give your questionnaire a title that attracts attention.</small>
-
-                            @error('title')
-                            <small class="text-danger">{{ $message }}</small>
-                            @enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="purpose">Purpose</label>
-                            <input name="purpose" type="text" class="form-control" id="purpose" aria-describedby="purposeHelp" placeholder="Enter Purpose">
-                            <small id="purposeHelp" class="form-text text-muted">Give a purpose will increase responses.</small>
-
-                            @error('purpose')
-                                <small class="text-danger">{{ $message }}</small>
-                            @enderror
-                        </div>
-
-
---}}
-                        <button class="btn btn-dark" type="submit">Complete Survey</button>
-
                     </form>
 
+                        <div class="card mt-4">
+                            <div class="card-header">Your Information</div>
 
+                            <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="name">Your name</label>
+                                        <input name="name" type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+                                        <small id="nameHelp" class="form-text text-muted">Hello what's your name </small>
 
+                                        @error('name')
+                                        <small class="text-danger">{{ $message }}</small>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Enter Email</label>
+                                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+                                        <small id="emailHelp" class="form-text text-muted">Your Email Please!</small>
+
+                                        @error('email')
+                                        <small class="text-danger">{{ $message }}</small>
+                                        @enderror
+                                    </div>
+                                <div>
+                                    <button class="btn btn-dark" type="submit">Complete Survey</button>
+                            </div>
                 </div>
             </div>
         </div>
