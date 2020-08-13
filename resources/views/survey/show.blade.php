@@ -47,7 +47,7 @@
                             </div>
                         @endforeach
 
-                    </form>
+
 
                         <div class="card mt-4">
                             <div class="card-header">Your Information</div>
@@ -55,7 +55,7 @@
                             <div class="card-body">
                                     <div class="form-group">
                                         <label for="name">Your name</label>
-                                        <input name="name" type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
+                                        <input name="survey[name]" type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name">
                                         <small id="nameHelp" class="form-text text-muted">Hello what's your name </small>
 
                                         @error('name')
@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="email">Enter Email</label>
-                                        <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+                                        <input name="survey[email]" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
                                         <small id="emailHelp" class="form-text text-muted">Your Email Please!</small>
 
                                         @error('email')
@@ -74,8 +74,9 @@
                                 <div>
                                     <button class="btn btn-dark" type="submit">Complete Survey</button>
                             </div>
-                </div>
-            </div>
+                        </div>
+                    </div>
+                 </form>
         </div>
     </div>
 </div>
