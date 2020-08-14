@@ -30,6 +30,9 @@ class QuestionController extends Controller
 
     public function destroy(Questionnaire $questionnaire, Question $question)
     {
-        dd($question);
+        $question->answers()->delete();
+        $question->delete();
+
+        return redirect($questionnaire->path());
     }
 }
